@@ -1,29 +1,26 @@
 /*
 KhadashPay
 Distributed under the MIT License
-© Copyright Maxim Bortnikov 2022
+© Copyright Maxim Bortnikov 2023
 For more information please visit
+https://sourceforge.net/projects/khadashpay/
+https://osdn.net/projects/khadashpay/
 https://github.com/Northstrix/KhadashPay
 Required libraries:
 https://github.com/zhouyangchao/AES
 https://github.com/peterferrie/serpent
 https://github.com/ddokkaebi/Blowfish
+https://github.com/Northstrix/DES_and_3DES_Library_for_MCUs
 https://github.com/ulwanski/sha512
-https://github.com/adafruit/Adafruit-GFX-Library
-https://github.com/adafruit/Adafruit_ILI9341
-https://github.com/adafruit/Adafruit-ST7735-Library
-https://github.com/adafruit/Adafruit_BusIO
-https://github.com/GyverLibs/GyverBus
-https://github.com/PaulStoffregen/PS2Keyboard
-https://github.com/siara-cc/esp32_arduino_sqlite3_lib
-https://github.com/miguelbalboa/rfid
+https://github.com/Bodmer/TFT_eSPI
 https://github.com/intrbiz/arduino-crypto
+https://github.com/miguelbalboa/rfid
 https://github.com/Chris--A/Keypad
 */
 /*
 Twinkle
 Distributed under the MIT License
-© Copyright Maxim Bortnikov 2022
+© Copyright Maxim Bortnikov 2023
 For more information please visit
 https://github.com/Northstrix/Twinkle
 Credit:
@@ -43,9 +40,12 @@ Implementation of DES by David Simmons was taken from here https://github.com/si
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-
 import java.awt.GraphicsEnvironment;
 import javax.swing.*;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.BadLocationException;  
 import javax.swing.text.Document;  
@@ -76,10 +76,10 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;  
 import javax.crypto.NoSuchPaddingException; 
 
-public class MainClass {
+public class Editor {
     static JMenuBar mb;
     static JMenu m,m1;
-    static JMenuItem c, o, sv, q, sk;
+    static JMenuItem c, o, sv, q, gk, sk;
     static JTextPane pane;
         public static String X;
         public static int end;
@@ -794,6 +794,56 @@ public class MainClass {
     return null;  
     }  
     
+    public static void generate_key() {
+  	  	SecureRandom desk = new SecureRandom();
+  	  	SecureRandom slct = new SecureRandom();
+  	  	StringBuilder dk = new StringBuilder();
+  		for(int i = 0; i < 16; i++) {
+  			if(slct.nextInt(2) == 1) {
+  				dk.append((char) (48 + desk.nextInt(10)));
+  			}
+  			else {
+  				dk.append((char) (65 + desk.nextInt(6)));
+  			}
+  		}
+  		//System.out.println(dk.toString());
+  	  	int gv = 0;
+  	  	SecureRandom aesk = new SecureRandom();
+  	  	StringBuilder aeskey = new StringBuilder();
+  	  	gv = 0;
+  	  	int adl = aesk.nextInt(200);
+  		for(int i = 0; i < 320 + adl; i++) {
+  			gv = 32 + aesk.nextInt(94);
+  			if(gv != 44)
+  				aeskey.append((char) gv);
+  			else {
+  				aeskey.append((char) gv + 2 + aesk.nextInt(74));
+  			}
+  		}
+  		//System.out.println(aeskey.toString());
+    	JFrame parentFrame = new JFrame();
+    	JFileChooser fileChooser = new JFileChooser();
+    	fileChooser.setDialogTitle("Choose where to save newly generated key");   
+    	int userSelection = fileChooser.showSaveDialog(parentFrame);
+    	if (userSelection == JFileChooser.APPROVE_OPTION) {
+    	    File fileToSave = fileChooser.getSelectedFile();
+        		FileWriter myWriter;
+				try {
+					myWriter = new FileWriter(fileToSave.getAbsolutePath());
+                    myWriter.write(dk.toString() + "," + aeskey.toString());
+                    myWriter.close();
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
+
+                //System.out.println("Successfully wrote to the file.");
+      	  	  	SecureRandom numb1 = new SecureRandom();
+      	  	  	for (int i = 0; i < 16; i++) {
+    	  		  	iv[i]= (byte) numb1.nextInt(256); 
+      	  	  	}
+              }
+    }
+    
     public static void gen_keys() {
     	cl();
 		int m = 0;
@@ -917,6 +967,18 @@ public class MainClass {
 		}
 		disp_rec("};");
     }
+    
+	static Color back_grey_cl = new Color(27, 29, 29);
+	static Color forg_blue_cl = new Color(77, 198, 232);
+	static Color forg_white_cl = new Color(239, 239, 239);
+	private static void customize_button(JButton btn) {
+		btn.setBackground(back_grey_cl);
+	      btn.setForeground(forg_blue_cl);
+		  Border line = new LineBorder(forg_blue_cl);
+		  Border margin = new EmptyBorder(5, 15, 5, 15);
+		  Border compound = new CompoundBorder(line, margin);
+		  btn.setBorder(compound);
+		}
 	
 	  public static void main(String[] args){
 		  /*
@@ -962,14 +1024,39 @@ public class MainClass {
 	        m = new JMenu("File");
 	        m1 = new JMenu("Action");
 	        o = new JMenuItem("Open");
-	        sv = new JMenuItem("Save As");
+	        sv = new JMenuItem("Save As...");
 	        c = new JMenuItem("Clear Pane");
 	        JButton genr = new JButton("Generate keys for KhadashPay");
 	        q = new JMenuItem("Quit");
-	        sk = new JMenuItem("Select key");
+	        gk = new JMenuItem("Generate encryption key");
+	        sk = new JMenuItem("Select encryption key");
+	        customize_button(genr);
+	        customize_button(sel);
+	        fd.setBackground(back_grey_cl);
+	        fd.setForeground(forg_blue_cl);
+	        ff.setBackground(back_grey_cl);
+	        ff.setForeground(forg_blue_cl);
+	        mb.setBackground(back_grey_cl);
+	        m.setForeground(forg_blue_cl);
+	        m1.setForeground(forg_blue_cl);
+	        label0.setForeground(forg_blue_cl);
+	        label1.setForeground(forg_blue_cl);
+	        o.setBackground(back_grey_cl);
+	        sv.setBackground(back_grey_cl);
+	        c.setBackground(back_grey_cl);
+	        gk.setBackground(back_grey_cl);
+	        sk.setBackground(back_grey_cl);
+	        q.setBackground(back_grey_cl);
+	        o.setForeground(forg_blue_cl);
+	        sv.setForeground(forg_blue_cl);
+	        c.setForeground(forg_blue_cl);
+	        gk.setForeground(forg_blue_cl);
+	        sk.setForeground(forg_blue_cl);
+	        q.setForeground(forg_blue_cl);
 	        m.add(o);
 	        m.add(sv);
 	        m1.add(c);
+	        m.add(gk);
 	        m.add(sk);
 	        m.add(q);
 	        mb.add(m);
@@ -989,6 +1076,7 @@ public class MainClass {
 	        Color bclr = new Color(18, 18, 18);
 	        pane.setForeground(frgr);
 	        pane.setBackground(bclr);
+	        pane.setCaretColor(forg_white_cl);
 	        SimpleAttributeSet attributeSet = new SimpleAttributeSet();  
 	        StyleConstants.setFontFamily(attributeSet, X);
 	        StyleConstants.setFontSize(attributeSet, 16); 
@@ -1014,7 +1102,7 @@ public class MainClass {
 	        
 	        genr.addActionListener(e ->
 	        {
-	        	Color bbclr = new Color(7, 95, 250);
+	        	Color bbclr = new Color(36, 36, 36);
 	        	pane.setBackground(bbclr);
 	        	gen_keys(); 
 	        });
@@ -1109,6 +1197,11 @@ public class MainClass {
 	                  }
 	        	    SwingUtilities.updateComponentTreeUI(frame);
 	        	}
+	        });
+	        
+	        gk.addActionListener(e ->
+	        {
+	        	generate_key();
 	        });
 	        
 	        sk.addActionListener(e ->
