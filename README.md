@@ -8,7 +8,7 @@ You can find the tutorials here:
 V1.0: https://www.instructables.com/The-KhadashPay-Project/
 </br>
 V2.0: https://www.instructables.com/KhadashPay-V20/
-</br>
+</br></br>
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/ESP32_Version/Pictures/IMG_20230318_131150.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/ESP32_Version/Pictures/IMG_20230318_140032_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/ESP32_Version/Pictures/IMG_20230318_134810_hdr.jpg)
