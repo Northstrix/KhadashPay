@@ -7,7 +7,9 @@ You can find the tutorials here:
 </br>
 V1.0: https://www.instructables.com/The-KhadashPay-Project/
 </br>
-V2.0: https://www.instructables.com/KhadashPay-V20/
+V2.0 (ESP32 Version): https://www.instructables.com/KhadashPay-V20/
+</br>
+V2.0 (Raspberry Pi Pico Version): https://www.instructables.com/KhadashPay-V20-Raspberry-Pi-Pico-Version/
 </br></br>
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_140711.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_141928_hdr.jpg)
