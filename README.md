@@ -9,6 +9,11 @@ V1.0: https://www.instructables.com/The-KhadashPay-Project/
 </br>
 V2.0: https://www.instructables.com/KhadashPay-V20/
 </br></br>
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_140711.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_141928_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_142428_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_142821_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_143129_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/ESP32_Version/Pictures/IMG_20230318_131150.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/ESP32_Version/Pictures/IMG_20230318_140032_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/ESP32_Version/Pictures/IMG_20230318_134810_hdr.jpg)
