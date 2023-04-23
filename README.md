@@ -10,6 +10,8 @@ V1.0: https://www.instructables.com/The-KhadashPay-Project/
 V2.0 (ESP32 Version): https://www.instructables.com/KhadashPay-V20/
 </br>
 V2.0 (Raspberry Pi Pico Version): https://www.instructables.com/KhadashPay-V20-Raspberry-Pi-Pico-Version/
+</br>
+V3.0 (STM32F401CCU6 Version): https://www.instructables.com/KhadashPay-V30-STM32F401CCU6-Version/
 </br></br>
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_140711.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_141928_hdr.jpg)
