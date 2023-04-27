@@ -13,6 +13,21 @@ V2.0 (Raspberry Pi Pico Version): https://www.instructables.com/KhadashPay-V20-R
 </br>
 V3.0 (STM32F401CCU6 Version): https://www.instructables.com/KhadashPay-V30-STM32F401CCU6-Version/
 </br></br>
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_145545.jpg)
+
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154221_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154607_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154729_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154952_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_155215_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_155533_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_155633_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_155833_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160122_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160223_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160350_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160900_hdr.jpg)
+
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/STM32F401CCU6_Version/Pictures/IMG_20230421_153658.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_140711.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_141928_hdr.jpg)
