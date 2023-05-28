@@ -17,8 +17,20 @@ V3.0 (ESP32 Version): https://www.instructables.com/KhadashPay-V30/
 </br>
 V3.5 (ESP32 Version): https://www.instructables.com/KhadashPay-V35/
 </br></br>
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_144714.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_150104_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_150235_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_150727_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_151026_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_151404_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_151614_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_152002_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_152204_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_152350_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_152553.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_152752_hdr.jpg)
+![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.5/ESP32_Version/Pictures/IMG_20230527_153036_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_145545.jpg)
-
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154221_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154607_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_154729_hdr.jpg)
@@ -31,7 +43,6 @@ V3.5 (ESP32 Version): https://www.instructables.com/KhadashPay-V35/
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160223_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160350_hdr.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/ESP32_Version/Pictures/IMG_20230427_160900_hdr.jpg)
-
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V3.0/STM32F401CCU6_Version/Pictures/IMG_20230421_153658.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_140711.jpg)
 ![image text](https://github.com/Northstrix/KhadashPay/blob/main/V2.0/Raspberry_Pi_Pico_Version/Pictures/IMG_20230403_141928_hdr.jpg)
